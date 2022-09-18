@@ -1,4 +1,5 @@
 //Demonstrate the use of switch case statement in javascript ?
+
 let age = prompt("What is your age ?")
 age = Number.parseInt(age)
 switch (age) {
