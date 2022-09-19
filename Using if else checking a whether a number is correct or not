@@ -12,7 +12,7 @@ else{
 
 let i = prompt("Enter a number")
 i = Number.parseInt(i);
-let cn = (i == 50)? "correct numebr " : "Try again"
+let cn = (i == 50)? "correct number " : "Try again"
 console.log(cn)
 
 
