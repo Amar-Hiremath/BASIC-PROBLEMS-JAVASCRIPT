@@ -8,5 +8,12 @@ if(i== 50){
 else{
   console.log("Try again")
 }
+//------DOING IT WITH ANOTHER METHOD USING TERNARY OPERATOR----------------------
+
+let i = prompt("Enter a number")
+i = Number.parseInt(i);
+let cn = (i == 50)? "correct numebr " : "Try again"
+console.log(cn)
+
 
 
