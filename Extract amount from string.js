@@ -4,7 +4,7 @@ let strg = "Please give rupees 1000 "
 let amount = strg.slice("Please give rupees".length)
 console.log(amount)
 
-// OUTPUT = hiremath
+// OUTPUT = 1000
 
 // Another way to do it 
 
@@ -12,4 +12,4 @@ let strg = "Please give rupees 1000"
 let amount = strg.slice(5)
 console.log(amount)
 
-// OUTOUT = hiremath
+// OUTOUT = 1000
