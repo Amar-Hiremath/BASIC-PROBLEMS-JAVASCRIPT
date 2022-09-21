@@ -1,14 +1,14 @@
-// Extract the amount out of this string 
+// Extract the amount out of this string "Please give rupees 1000"
 
-let strg = "amar hiremath "
-let amount = strg.slice("amar".length)
+let strg = "Please give rupees 1000 "
+let amount = strg.slice("Please give rupees".length)
 console.log(amount)
 
 // OUTPUT = hiremath
 
 // Another way to do it 
 
-let strg = "amar hiremath "
+let strg = "Please give rupees 1000"
 let amount = strg.slice(5)
 console.log(amount)
 
