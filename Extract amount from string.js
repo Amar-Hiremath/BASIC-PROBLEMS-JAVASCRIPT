@@ -9,7 +9,7 @@ console.log(amount)
 // Another way to do it 
 
 let strg = "Please give rupees 1000"
-let amount = strg.slice(5)
+let amount = strg.slice(15)
 console.log(amount)
 
 // OUTOUT = 1000
