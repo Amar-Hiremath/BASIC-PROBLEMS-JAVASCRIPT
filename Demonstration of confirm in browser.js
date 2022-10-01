@@ -17,3 +17,29 @@ else{
 }
   runAgain = confirm("Do you want to run again ?")
 }
+
+
+//Another way of doing it is 
+
+
+function ageVerifier (){
+let age = prompt("enter your age")
+if(age){
+if(age>=18)
+{
+	alert("yes you can drive")
+}else{
+	alert("No you can not drive")
+    let con = confirm("do you want to run again")
+    	if(con===true)
+        {
+        	ageVerifier()
+        }
+        else{
+        	return
+        }
+	}
+    }
+    else return
+}
+ageVerifier()
