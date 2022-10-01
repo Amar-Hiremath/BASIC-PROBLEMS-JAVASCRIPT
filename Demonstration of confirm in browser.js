@@ -1,45 +1,28 @@
 /*Write a program using promopt function to take input of age as a value top tell from the user and user alert to tell him if he can drive and confirm to ask the user 
 if he wants to see the prompt again*/
 
-let runAgain = true;
-while(runAgain){
+function ageVerifier(){
 let age = prompt("Enter your age")
 age = Number.parseInt(age)
-
-const canDrive =(age)=>{
-  return (age>=18)? true:false
-}
-if (canDrive(age)){
+  if(age){
+        
+ if ( age >= 18 ){
   alert("Yes, you can drive")
 }
-else{
+else {
   alert("No, you cannot drive")
+  age = confirm("do you want to run it again ?")
+  if(age===true){
+    ageVerifier();
+  }
+  else{
+    return
+  }
 }
-  runAgain = confirm("Do you want to run again ?")
+}
+  else{
+    return 
+  }
 }
 
-
-//Another way of doing it is 
-
-
-function ageVerifier (){
-let age = prompt("enter your age")
-if(age){
-if(age>=18)
-{
-	alert("yes you can drive")
-}else{
-	alert("No you can not drive")
-    let con = confirm("do you want to run again")
-    	if(con===true)
-        {
-        	ageVerifier()
-        }
-        else{
-        	return
-        }
-	}
-    }
-    else return
-}
 ageVerifier()
